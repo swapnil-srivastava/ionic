@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Welcome to Ionic!</h2>
+  <p>
+    This starter project comes with simple tabs-based layout for apps
+    that are going to primarily use a Tabbed UI.
+  </p>
+  <p>
+    Take a look at the <code>src/pages/</code> directory to add or change tabs,
+    update any existing page or create new pages.
+  </p>
+
+
+  <div class="row">
+    <button (click)="start()" class="btn btn-primary">Play</button>
+    <button (click)="toggleControls()" class="btn btn-success">Toggle Controls</button>
+    <button (click)="pause()" class="btn btn-warning">Pause</button>
+    <button (click)="resume()" class="btn btn-info">Resume</button>
+    <button (click)="sound()" class="btn btn-danger">Play with Sound</button>
+  </div>
+
+  <div class="row">
+      <h3>
+        <video #videoElement></video>
+      </h3>
+  </div>
+
+  <iframe src="http://127.0.0.1:4200" frameborder="3"></iframe>
+
+</ion-content>
+
+
+<!-- <div class="row">
+  <button (click)="start()" class="btn btn-primary">Play</button>
+  <button (click)="toggleControls()" class="btn btn-success">Toggle Controls</button>
+  <button (click)="pause()" class="btn btn-warning">Pause</button>
+  <button (click)="resume()" class="btn btn-info">Resume</button>
+  <button (click)="sound()" class="btn btn-danger">Play with Sound</button>
+</div> -->
+
+<!-- <div class="row">
+      <h3>
+        <video #videoElement></video>
+      </h3>
+</div> -->
+
