@@ -1,0 +1,17 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Camera Native</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <button full (click)=startNative() ion-button>Click native camera</button>
+
+  <div *ngIf="imgSource">
+    <img [src]="imgSource" style="width:500px; height: 500px">
+  </div>
+
+</ion-content>

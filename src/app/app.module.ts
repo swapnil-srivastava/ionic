@@ -7,9 +7,16 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
+import { CameraNativePage } from '../pages/camera-native/camera-native';
+import { BowserPage } from '../pages/bowser/bowser';
+import { SafariPage } from '../pages/safari/safari';
+import { InappbowserPage } from '../pages/inappbowser/inappbowser'
+import { AndriodPage } from '../pages/andriod/andriod'
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { Camera } from '@ionic-native/camera';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
 
 @NgModule({
   declarations: [
@@ -17,11 +24,16 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    CameraNativePage,
+    BowserPage,
+    SafariPage,
+    InappbowserPage,
+    AndriodPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -29,12 +41,19 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    CameraNativePage,
+    BowserPage,
+    SafariPage,
+    InappbowserPage,
+    AndriodPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    Camera,
+    InAppBrowser
   ]
 })
 export class AppModule {}

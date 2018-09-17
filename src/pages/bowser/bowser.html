@@ -1,0 +1,29 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Normal Browser</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <!-- <div class="row">
+    <button (click)="toggleControls()"  ion-button class="btn btn-success">Toggle Controls</button>
+    <button (click)="pause()"  ion-button class="btn btn-warning">Pause</button>
+    <button (click)="resume()"  ion-button class="btn btn-info">Resume</button>
+    <button (click)="sound()" ion-button  class="btn btn-danger">Play with Sound</button>
+  </div>
+
+  <hr>
+  <hr> -->
+
+  <button (click)="start()" ion-button class="btn btn-primary">Play of Browser</button>
+
+  <div class="row">
+      <h3>
+        <video #videoElement></video>
+      </h3>
+  </div>
+
+</ion-content>
